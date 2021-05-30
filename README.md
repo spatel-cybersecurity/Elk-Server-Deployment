@@ -112,11 +112,13 @@ These Beats allow us to collect the following information from each machine:
  -FileBeat collects all the login attempt irrespective of successfull or unsuccessful. Help  to track user logon events 
       
   [FileBeat-example](Diagram/Filebeat-Login-example.JPG)
-	   
+	![image](https://user-images.githubusercontent.com/84956530/120097460-e8703680-c173-11eb-9423-7de49700acbb.png)
+   
   -MetricBeat collect the data from you systems and services. Example  CPU usage to memory engaged, even metricbeat send sytem and services statistics. 
 	   
   [MetricBeat-example](Diagram/MetricBeat-CPU-Usage-Example.JPG)
-                
+       ![image](https://user-images.githubusercontent.com/84956530/120097472-fde56080-c173-11eb-80a4-8bec7a160040.png)
+         
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
@@ -154,4 +156,4 @@ Download MetricBeat playbook by running command in Elk VM: curl https://github.c
 
 Run MetricBeat Playbook: ansible-playbook /etc/ansible/metric/metricbeat-playbook.yml
 
-Install 
+ 
